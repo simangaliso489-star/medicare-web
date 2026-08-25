@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manage your MediCare+ profile, settings, and account preferences." />
+  <title>Profile | MediCare+</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-layout">
+  
+  <!-- Sidebar for Desktop -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <i class="ri-hospital-line"></i>
+      MediCare+
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html"><i class="ri-home-5-line"></i> Dashboard</a>
+      <a href="doctors.html"><i class="ri-nurse-line"></i> Find Doctors</a>
+      <a href="booking.html"><i class="ri-calendar-check-line"></i> Appointments</a>
+      <a href="records.html"><i class="ri-folder-open-line"></i> Health Records</a>
+      <a href="prescriptions.html"><i class="ri-medicine-bottle-line"></i> Prescriptions</a>
+      <a href="notifications.html"><i class="ri-notification-3-line"></i> Notifications</a>
+      <a href="profile.html" class="active"><i class="ri-user-3-line"></i> Profile</a>
+    </nav>
+    <div style="padding: 24px 16px;">
+      <a href="login.html" class="btn btn-ghost" style="color: var(--text-secondary); width: 100%; justify-content: flex-start; gap: 12px; padding: 12px 16px;">
+        <i class="ri-logout-box-r-line"></i> Log Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-wrapper">
+      <div class="page-content">
+        <div style="max-width: 700px; margin: 0 auto;">
+          <!-- Profile Header -->
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <i class="ri-user-3-line"></i>
+            </div>
+            <h2>Antonny</h2>
+            <p>antonny@email.com</p>
+            <div class="profile-stats">
+              <div class="profile-stat">
+                <div class="stat-num">12</div>
+                <div class="stat-label">Visits</div>
+              </div>
+              <div class="profile-stat">
+                <div class="stat-num">5</div>
+                <div class="stat-label">Doctors</div>
+              </div>
+              <div class="profile-stat">
+                <div class="stat-num">3</div>
+                <div class="stat-label">Records</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu -->
+          <div class="profile-menu">
+            <!-- Account -->
+            <div class="profile-menu-group">
+              <h4>Account</h4>
+
+              <a href="#" class="profile-menu-item">
+                <div class="profile-menu-icon qa-blue"><i class="ri-user-settings-line"></i></div>
+                <span class="menu-text">Personal Information</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+
+              <a href="records.html" class="profile-menu-item">
+                <div class="profile-menu-icon qa-green"><i class="ri-file-list-3-line"></i></div>
+                <span class="menu-text">Health Records</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+
+              <a href="prescriptions.html" class="profile-menu-item">
+                <div class="profile-menu-icon qa-orange"><i class="ri-medicine-bottle-line"></i></div>
+                <span class="menu-text">My Prescriptions</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+
+              <a href="#" class="profile-menu-item">
+                <div class="profile-menu-icon qa-purple"><i class="ri-bank-card-line"></i></div>
+                <span class="menu-text">Payment Methods</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+            </div>
+
+            <!-- Preferences -->
+            <div class="profile-menu-group">
+              <h4>Preferences</h4>
+
+              <a href="notifications.html" class="profile-menu-item">
+                <div class="profile-menu-icon qa-pink"><i class="ri-notification-3-line"></i></div>
+                <span class="menu-text">Notifications</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+
+              <a href="#" class="profile-menu-item">
+                <div class="profile-menu-icon qa-teal"><i class="ri-global-line"></i></div>
+                <span class="menu-text">Language</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+
+              <a href="#" class="profile-menu-item">
+                <div class="profile-menu-icon qa-yellow"><i class="ri-lock-password-line"></i></div>
+                <span class="menu-text">Security & Privacy</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+            </div>
+
+            <!-- Support -->
+            <div class="profile-menu-group">
+              <h4>Support</h4>
+
+              <a href="#" class="profile-menu-item">
+                <div class="profile-menu-icon qa-blue"><i class="ri-question-line"></i></div>
+                <span class="menu-text">Help Center</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+
+              <a href="#" class="profile-menu-item">
+                <div class="profile-menu-icon qa-green"><i class="ri-information-line"></i></div>
+                <span class="menu-text">About MediCare+</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+
+              <a href="index.html" class="profile-menu-item logout-item">
+                <div class="profile-menu-icon qa-red"><i class="ri-logout-box-r-line"></i></div>
+                <span class="menu-text">Log Out</span>
+                <span class="menu-arrow"><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <i class="ri-home-5-line"></i>
+      Home
+    </a>
+    <a href="doctors.html">
+      <i class="ri-nurse-line"></i>
+      Doctors
+    </a>
+    <a href="booking.html">
+      <i class="ri-calendar-check-line"></i>
+      Book
+    </a>
+    <a href="records.html">
+      <i class="ri-folder-open-line"></i>
+      Records
+    </a>
+    <a href="profile.html" class="active">
+      <i class="ri-user-3-line"></i>
+      Profile
+    </a>
+  </nav>
+</div>
+</body>
+</html>

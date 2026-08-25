@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Search and find top healthcare professionals on MediCare+." />
+  <title>Find Doctors | MediCare+</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-layout">
+  
+  <!-- Sidebar for Desktop -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <i class="ri-hospital-line"></i>
+      MediCare+
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html"><i class="ri-home-5-line"></i> Dashboard</a>
+      <a href="doctors.html" class="active"><i class="ri-nurse-line"></i> Find Doctors</a>
+      <a href="booking.html"><i class="ri-calendar-check-line"></i> Appointments</a>
+      <a href="records.html"><i class="ri-folder-open-line"></i> Health Records</a>
+      <a href="prescriptions.html"><i class="ri-medicine-bottle-line"></i> Prescriptions</a>
+      <a href="notifications.html"><i class="ri-notification-3-line"></i> Notifications</a>
+      <a href="profile.html"><i class="ri-user-3-line"></i> Profile</a>
+    </nav>
+    <div style="padding: 24px 16px;">
+      <a href="login.html" class="btn btn-ghost" style="color: var(--text-secondary); width: 100%; justify-content: flex-start; gap: 12px; padding: 12px 16px;">
+        <i class="ri-logout-box-r-line"></i> Log Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-wrapper">
+      <div class="page-content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+          <a href="dashboard.html" class="back-btn">
+            <i class="ri-arrow-left-line"></i>
+          </a>
+          <h1>Find Doctors</h1>
+          <button class="action-btn">
+            <i class="ri-filter-3-line"></i>
+          </button>
+        </div>
+
+        <!-- Search -->
+        <div style="padding: 14px 24px;">
+          <div class="form-control" style="display: flex; align-items: center; gap: 8px;">
+            <i class="ri-search-line" style="color: var(--text-muted);"></i>
+            <input type="text" placeholder="Search by name or specialty..." style="flex: 1; border: none; outline: none; background: transparent; font-size: 0.938rem; color: var(--text-primary);" />
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <span class="filter-tab active">All</span>
+          <span class="filter-tab">General</span>
+          <span class="filter-tab">Cardiology</span>
+          <span class="filter-tab">Dentistry</span>
+          <span class="filter-tab">Pediatrics</span>
+          <span class="filter-tab">Neurology</span>
+          <span class="filter-tab">Dermatology</span>
+          <span class="filter-tab">Orthopedics</span>
+        </div>
+
+        <!-- Doctor List -->
+        <div class="doctor-list" style="margin-top: 8px;">
+          <!-- Doctor 1 -->
+          <a href="booking.html" class="doctor-list-card">
+            <div class="doc-list-avatar">
+              <i class="ri-user-smile-line"></i>
+            </div>
+            <div class="doc-list-info">
+              <h4>Dr. James Wilson</h4>
+              <p class="doc-specialty">General Practitioner</p>
+              <div class="doc-meta">
+                <span><i class="ri-star-fill" style="color: var(--warning);"></i> 4.9</span>
+                <span><i class="ri-map-pin-line"></i> 2.5 km</span>
+                <span class="badge badge-online">Online</span>
+              </div>
+            </div>
+            <div class="doc-list-book">
+              <span class="btn btn-primary btn-small">Book</span>
+            </div>
+          </a>
+
+          <!-- Doctor 2 -->
+          <a href="booking.html" class="doctor-list-card">
+            <div class="doc-list-avatar">
+              <i class="ri-heart-pulse-line"></i>
+            </div>
+            <div class="doc-list-info">
+              <h4>Dr. Sarah Kim</h4>
+              <p class="doc-specialty">Cardiologist</p>
+              <div class="doc-meta">
+                <span><i class="ri-star-fill" style="color: var(--warning);"></i> 4.8</span>
+                <span><i class="ri-map-pin-line"></i> 3.1 km</span>
+                <span class="badge badge-online">Online</span>
+              </div>
+            </div>
+            <div class="doc-list-book">
+              <span class="btn btn-primary btn-small">Book</span>
+            </div>
+          </a>
+
+          <!-- Doctor 3 -->
+          <a href="booking.html" class="doctor-list-card">
+            <div class="doc-list-avatar">
+              <i class="ri-user-heart-line"></i>
+            </div>
+            <div class="doc-list-info">
+              <h4>Dr. Michael Roberts</h4>
+              <p class="doc-specialty">Dentist</p>
+              <div class="doc-meta">
+                <span><i class="ri-star-fill" style="color: var(--warning);"></i> 4.7</span>
+                <span><i class="ri-map-pin-line"></i> 1.8 km</span>
+                <span class="badge badge-offline">Offline</span>
+              </div>
+            </div>
+            <div class="doc-list-book">
+              <span class="btn btn-primary btn-small">Book</span>
+            </div>
+          </a>
+
+          <!-- Doctor 4 -->
+          <a href="booking.html" class="doctor-list-card">
+            <div class="doc-list-avatar">
+              <i class="ri-user-smile-line"></i>
+            </div>
+            <div class="doc-list-info">
+              <h4>Dr. Emily Chen</h4>
+              <p class="doc-specialty">Pediatrician</p>
+              <div class="doc-meta">
+                <span><i class="ri-star-fill" style="color: var(--warning);"></i> 4.9</span>
+                <span><i class="ri-map-pin-line"></i> 4.2 km</span>
+                <span class="badge badge-online">Online</span>
+              </div>
+            </div>
+            <div class="doc-list-book">
+              <span class="btn btn-primary btn-small">Book</span>
+            </div>
+          </a>
+          
+          <!-- Doctor 5 -->
+          <a href="booking.html" class="doctor-list-card">
+            <div class="doc-list-avatar">
+              <i class="ri-brain-line"></i>
+            </div>
+            <div class="doc-list-info">
+              <h4>Dr. David Lee</h4>
+              <p class="doc-specialty">Neurologist</p>
+              <div class="doc-meta">
+                <span><i class="ri-star-fill" style="color: var(--warning);"></i> 4.6</span>
+                <span><i class="ri-map-pin-line"></i> 5.0 km</span>
+                <span class="badge badge-online">Online</span>
+              </div>
+            </div>
+            <div class="doc-list-book">
+              <span class="btn btn-primary btn-small">Book</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation (Mobile Only) -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <i class="ri-home-5-line"></i>
+      Home
+    </a>
+    <a href="doctors.html" class="active">
+      <i class="ri-nurse-line"></i>
+      Doctors
+    </a>
+    <a href="booking.html">
+      <i class="ri-calendar-check-line"></i>
+      Book
+    </a>
+    <a href="records.html">
+      <i class="ri-folder-open-line"></i>
+      Records
+    </a>
+    <a href="profile.html">
+      <i class="ri-user-3-line"></i>
+      Profile
+    </a>
+  </nav>
+
+</div>
+
+</body>
+</html>

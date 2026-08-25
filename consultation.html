@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chat with your doctor in real-time on MediCare+." />
+  <title>Consultation | MediCare+</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background: var(--bg-white);">
+
+<div class="app-layout">
+  
+  <!-- Sidebar for Desktop -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <i class="ri-hospital-line"></i>
+      MediCare+
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html"><i class="ri-home-5-line"></i> Dashboard</a>
+      <a href="doctors.html"><i class="ri-nurse-line"></i> Find Doctors</a>
+      <a href="booking.html"><i class="ri-calendar-check-line"></i> Appointments</a>
+      <a href="records.html"><i class="ri-folder-open-line"></i> Health Records</a>
+      <a href="prescriptions.html"><i class="ri-medicine-bottle-line"></i> Prescriptions</a>
+      <a href="notifications.html"><i class="ri-notification-3-line"></i> Notifications</a>
+      <a href="profile.html"><i class="ri-user-3-line"></i> Profile</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-wrapper" style="height: 100vh; position: relative;">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <a href="dashboard.html" class="back-btn">
+          <i class="ri-arrow-left-line"></i>
+        </a>
+        <div style="text-align: center;">
+          <h1 style="font-size: 1.05rem;">Dr. James Wilson</h1>
+          <p style="font-size: 0.75rem; color: var(--success); font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 4px;">
+            <span style="width: 6px; height: 6px; background: var(--success); border-radius: 50%; display: inline-block;"></span> Online
+          </p>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button class="action-btn"><i class="ri-phone-line"></i></button>
+          <button class="action-btn"><i class="ri-vidicon-line"></i></button>
+        </div>
+      </div>
+
+      <!-- Chat Messages -->
+      <div class="chat-container">
+        <div class="chat-date">Today, Aug 7, 2026</div>
+
+        <div class="chat-bubble received">
+          Hello! I'm Dr. Wilson. How can I help you today?
+          <div class="chat-time">9:00 AM</div>
+        </div>
+
+        <div class="chat-bubble sent">
+          Hi Doctor, I've been having frequent headaches for the past 3 days. It's usually worse in the morning.
+          <div class="chat-time">9:02 AM</div>
+        </div>
+
+        <div class="chat-bubble received">
+          I understand. Are you experiencing any other symptoms like nausea, sensitivity to light, or neck stiffness?
+          <div class="chat-time">9:03 AM</div>
+        </div>
+
+        <div class="chat-bubble sent">
+          Yes, I feel some sensitivity to light, and sometimes mild nausea too.
+          <div class="chat-time">9:05 AM</div>
+        </div>
+
+        <div class="chat-bubble received">
+          Thank you for sharing that. Based on your symptoms, it sounds like it could be tension headaches or migraines. I'd recommend the following:
+          <br /><br />
+          1. Rest in a quiet, dark room when symptoms are severe<br />
+          2. Stay hydrated — drink at least 8 glasses of water<br />
+          3. I'll prescribe some medication for relief
+          <br /><br />
+          I'll send a digital prescription now. If symptoms persist beyond 5 days, please schedule a follow-up visit.
+          <div class="chat-time">9:08 AM</div>
+        </div>
+
+        <div class="chat-bubble sent">
+          Thank you so much, Doctor! I'll follow your advice. <i class="ri-thumb-up-line" style="vertical-align: middle;"></i>
+          <div class="chat-time">9:10 AM</div>
+        </div>
+
+        <div class="chat-bubble received">
+          You're welcome! Take care and don't hesitate to reach out if you need anything. I've sent the prescription to your records.
+          <div class="chat-time">9:11 AM</div>
+        </div>
+      </div>
+
+      <!-- Chat Input Bar -->
+      <div class="chat-input-bar">
+        <div class="content-wrapper" style="display: flex; gap: 10px; align-items: center;">
+          <button class="chat-attach-btn">
+            <i class="ri-attachment-2"></i>
+          </button>
+          <input type="text" placeholder="Type a message..." />
+          <button class="chat-send-btn">
+            <i class="ri-send-plane-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

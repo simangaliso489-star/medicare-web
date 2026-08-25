@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View and manage your medical records securely on MediCare+." />
+  <title>Medical Records | MediCare+</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-layout">
+  
+  <!-- Sidebar for Desktop -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <i class="ri-hospital-line"></i>
+      MediCare+
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html"><i class="ri-home-5-line"></i> Dashboard</a>
+      <a href="doctors.html"><i class="ri-nurse-line"></i> Find Doctors</a>
+      <a href="booking.html"><i class="ri-calendar-check-line"></i> Appointments</a>
+      <a href="records.html" class="active"><i class="ri-folder-open-line"></i> Health Records</a>
+      <a href="prescriptions.html"><i class="ri-medicine-bottle-line"></i> Prescriptions</a>
+      <a href="notifications.html"><i class="ri-notification-3-line"></i> Notifications</a>
+      <a href="profile.html"><i class="ri-user-3-line"></i> Profile</a>
+    </nav>
+    <div style="padding: 24px 16px;">
+      <a href="login.html" class="btn btn-ghost" style="color: var(--text-secondary); width: 100%; justify-content: flex-start; gap: 12px; padding: 12px 16px;">
+        <i class="ri-logout-box-r-line"></i> Log Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-wrapper">
+      <div class="page-content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+          <a href="dashboard.html" class="back-btn">
+            <i class="ri-arrow-left-line"></i>
+          </a>
+          <h1>Medical Records</h1>
+          <button class="action-btn">
+            <i class="ri-add-line"></i>
+          </button>
+        </div>
+
+        <!-- Summary Stats -->
+        <div class="records-summary">
+          <div class="record-stat">
+            <div class="stat-icon text-primary bg-primary-50">
+              <i class="ri-file-list-3-line"></i>
+            </div>
+            <div class="stat-value">12</div>
+            <div class="stat-label">Total Records</div>
+          </div>
+          <div class="record-stat">
+            <div class="stat-icon text-success bg-success-light">
+              <i class="ri-medicine-bottle-line"></i>
+            </div>
+            <div class="stat-value">5</div>
+            <div class="stat-label">Prescriptions</div>
+          </div>
+          <div class="record-stat">
+            <div class="stat-icon text-info bg-info-light">
+              <i class="ri-microscope-line"></i>
+            </div>
+            <div class="stat-value">4</div>
+            <div class="stat-label">Lab Results</div>
+          </div>
+          <div class="record-stat">
+            <div class="stat-icon text-warning bg-warning-light">
+              <i class="ri-calendar-check-line"></i>
+            </div>
+            <div class="stat-value">3</div>
+            <div class="stat-label">Visits</div>
+          </div>
+        </div>
+
+        <!-- Records List -->
+        <div class="section-header">
+          <h3>Recent Records</h3>
+          <a href="#">Filter</a>
+        </div>
+
+        <div class="records-list">
+          <a href="#" class="record-item">
+            <div class="record-icon qa-blue"><i class="ri-microscope-line"></i></div>
+            <div class="record-info">
+              <h4>Blood Test Results</h4>
+              <p>Complete Blood Count (CBC) · Aug 5, 2026</p>
+            </div>
+            <span class="record-arrow"><i class="ri-arrow-right-s-line"></i></span>
+          </a>
+
+          <a href="prescriptions.html" class="record-item">
+            <div class="record-icon qa-green"><i class="ri-medicine-bottle-line"></i></div>
+            <div class="record-info">
+              <h4>Prescription — Dr. Wilson</h4>
+              <p>Headache treatment plan · Aug 7, 2026</p>
+            </div>
+            <span class="record-arrow"><i class="ri-arrow-right-s-line"></i></span>
+          </a>
+
+          <a href="#" class="record-item">
+            <div class="record-icon qa-purple"><i class="ri-file-text-line"></i></div>
+            <div class="record-info">
+              <h4>Consultation Summary</h4>
+              <p>General checkup notes · Jul 28, 2026</p>
+            </div>
+            <span class="record-arrow"><i class="ri-arrow-right-s-line"></i></span>
+          </a>
+
+          <a href="#" class="record-item">
+            <div class="record-icon qa-orange"><i class="ri-body-scan-line"></i></div>
+            <div class="record-info">
+              <h4>X-Ray Report</h4>
+              <p>Chest X-Ray scan · Jul 15, 2026</p>
+            </div>
+            <span class="record-arrow"><i class="ri-arrow-right-s-line"></i></span>
+          </a>
+
+          <a href="#" class="record-item">
+            <div class="record-icon qa-teal"><i class="ri-flask-line"></i></div>
+            <div class="record-info">
+              <h4>Urine Analysis</h4>
+              <p>Routine urine test · Jul 10, 2026</p>
+            </div>
+            <span class="record-arrow"><i class="ri-arrow-right-s-line"></i></span>
+          </a>
+
+          <a href="#" class="record-item">
+            <div class="record-icon qa-pink"><i class="ri-heart-pulse-line"></i></div>
+            <div class="record-info">
+              <h4>ECG Report</h4>
+              <p>Electrocardiogram scan · Jun 22, 2026</p>
+            </div>
+            <span class="record-arrow"><i class="ri-arrow-right-s-line"></i></span>
+          </a>
+
+          <a href="#" class="record-item">
+            <div class="record-icon qa-blue"><i class="ri-syringe-line"></i></div>
+            <div class="record-info">
+              <h4>Vaccination Record</h4>
+              <p>COVID-19 Booster · Jun 10, 2026</p>
+            </div>
+            <span class="record-arrow"><i class="ri-arrow-right-s-line"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <i class="ri-home-5-line"></i>
+      Home
+    </a>
+    <a href="doctors.html">
+      <i class="ri-nurse-line"></i>
+      Doctors
+    </a>
+    <a href="booking.html">
+      <i class="ri-calendar-check-line"></i>
+      Book
+    </a>
+    <a href="records.html" class="active">
+      <i class="ri-folder-open-line"></i>
+      Records
+    </a>
+    <a href="profile.html">
+      <i class="ri-user-3-line"></i>
+      Profile
+    </a>
+  </nav>
+</div>
+</body>
+</html>

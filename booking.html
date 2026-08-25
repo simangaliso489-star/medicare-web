@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book an appointment with your doctor on MediCare+." />
+  <title>Book Appointment | MediCare+</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-layout">
+  
+  <!-- Sidebar for Desktop -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <i class="ri-hospital-line"></i>
+      MediCare+
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html"><i class="ri-home-5-line"></i> Dashboard</a>
+      <a href="doctors.html"><i class="ri-nurse-line"></i> Find Doctors</a>
+      <a href="booking.html" class="active"><i class="ri-calendar-check-line"></i> Appointments</a>
+      <a href="records.html"><i class="ri-folder-open-line"></i> Health Records</a>
+      <a href="prescriptions.html"><i class="ri-medicine-bottle-line"></i> Prescriptions</a>
+      <a href="notifications.html"><i class="ri-notification-3-line"></i> Notifications</a>
+      <a href="profile.html"><i class="ri-user-3-line"></i> Profile</a>
+    </nav>
+    <div style="padding: 24px 16px;">
+      <a href="login.html" class="btn btn-ghost" style="color: var(--text-secondary); width: 100%; justify-content: flex-start; gap: 12px; padding: 12px 16px;">
+        <i class="ri-logout-box-r-line"></i> Log Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-wrapper">
+      <div class="page-content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+          <a href="doctors.html" class="back-btn">
+            <i class="ri-arrow-left-line"></i>
+          </a>
+          <h1>Book Appointment</h1>
+          <button class="action-btn">
+            <i class="ri-heart-3-line"></i>
+          </button>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <!-- Doctor Info -->
+          <div class="booking-doctor">
+            <div class="booking-doc-avatar">
+              <i class="ri-user-smile-line"></i>
+            </div>
+            <div class="booking-doc-info">
+              <h3>Dr. James Wilson</h3>
+              <p class="specialty">General Practitioner</p>
+              <p class="location"><i class="ri-map-pin-line"></i> City Medical Center, 2.5 km</p>
+              <div class="booking-doc-stats">
+                <span class="stat-rating"><i class="ri-star-fill"></i> 4.9</span>
+                <span class="stat-reviews">120+ Reviews</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Select Date -->
+          <div class="booking-section">
+            <h3><i class="ri-calendar-event-line"></i> Select Date</h3>
+            <div class="date-selector">
+              <div class="date-item">
+                <div class="day">Mon</div>
+                <div class="num">08</div>
+              </div>
+              <div class="date-item">
+                <div class="day">Tue</div>
+                <div class="num">09</div>
+              </div>
+              <div class="date-item active">
+                <div class="day">Wed</div>
+                <div class="num">10</div>
+              </div>
+              <div class="date-item">
+                <div class="day">Thu</div>
+                <div class="num">11</div>
+              </div>
+              <div class="date-item">
+                <div class="day">Fri</div>
+                <div class="num">12</div>
+              </div>
+              <div class="date-item">
+                <div class="day">Sat</div>
+                <div class="num">13</div>
+              </div>
+              <div class="date-item">
+                <div class="day">Sun</div>
+                <div class="num">14</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Select Time -->
+          <div class="booking-section">
+            <h3><i class="ri-time-line"></i> Select Time</h3>
+            <div class="time-grid">
+              <div class="time-slot">08:00</div>
+              <div class="time-slot">08:30</div>
+              <div class="time-slot active">09:00</div>
+              <div class="time-slot">09:30</div>
+              <div class="time-slot">10:00</div>
+              <div class="time-slot disabled">10:30</div>
+              <div class="time-slot">11:00</div>
+              <div class="time-slot disabled">11:30</div>
+              <div class="time-slot">14:00</div>
+              <div class="time-slot">14:30</div>
+              <div class="time-slot">15:00</div>
+              <div class="time-slot">15:30</div>
+            </div>
+          </div>
+
+          <!-- Consultation Type -->
+          <div class="booking-section">
+            <h3><i class="ri-customer-service-2-line"></i> Consultation Type</h3>
+            <div class="consult-types">
+              <div class="consult-type active">
+                <i class="ri-hospital-line"></i>
+                <span>In-Person</span>
+              </div>
+              <div class="consult-type">
+                <i class="ri-vidicon-line"></i>
+                <span>Video Call</span>
+              </div>
+              <div class="consult-type">
+                <i class="ri-chat-voice-line"></i>
+                <span>Chat</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reason -->
+          <div class="booking-section">
+            <h3><i class="ri-file-edit-line"></i> Reason for Visit</h3>
+            <textarea class="form-control" placeholder="Briefly describe your symptoms or reason..."></textarea>
+          </div>
+
+          <!-- Summary -->
+          <div class="booking-summary">
+            <div class="summary-row">
+              <span>Consultation Fee</span>
+              <span>$50.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Service Charge</span>
+              <span>$5.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Discount</span>
+              <span style="color: var(--success);">-$5.00</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span>$50.00</span>
+            </div>
+          </div>
+
+          <!-- Book Button -->
+          <div class="booking-btn">
+            <a href="dashboard.html" class="btn btn-primary">Confirm Booking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <i class="ri-home-5-line"></i>
+      Home
+    </a>
+    <a href="doctors.html">
+      <i class="ri-nurse-line"></i>
+      Doctors
+    </a>
+    <a href="booking.html" class="active">
+      <i class="ri-calendar-check-line"></i>
+      Book
+    </a>
+    <a href="records.html">
+      <i class="ri-folder-open-line"></i>
+      Records
+    </a>
+    <a href="profile.html">
+      <i class="ri-user-3-line"></i>
+      Profile
+    </a>
+  </nav>
+</div>
+</body>
+</html>
