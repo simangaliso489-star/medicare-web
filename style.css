@@ -2098,3 +2098,100 @@ select.form-control {
   }
 }
 
+/* ========================================================
+   PHP / Database Integration — Additional Styles
+   ======================================================== */
+
+/* CSS variable aliases used by admin & PHP pages */
+:root {
+  --error: #dc2626;
+  --bg-main: #f8fafc;
+}
+
+/* Alert boxes */
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.alert i { font-size: 1.1rem; flex-shrink: 0; }
+.alert a { font-weight: 700; text-decoration: underline; }
+
+.alert-success {
+  background: var(--success-light);
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+.alert-error {
+  background: var(--danger-light);
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* Sidebar notification badge */
+.sidebar-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 100px;
+  background: var(--danger);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+/* Notif-tabs as links instead of divs */
+.notif-tabs a,
+.notif-tab {
+  cursor: pointer;
+}
+.notif-tabs { display: flex; gap: 4px; padding: 0 24px 12px; overflow-x: auto; }
+.notif-tab {
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+}
+.notif-tab.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Filter tab as <a> link styling */
+.filter-tab {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Doctor list card — ensure link variant works */
+.doctor-list-card { display: flex; text-decoration: none; color: inherit; }
+
+/* Booking confirm button disabled state */
+#confirm-btn { transition: opacity 0.2s; }
+
+/* Prescription status pill colours */
+.status-active    { background: hsl(142,70%,90%); color: hsl(142,70%,28%); }
+.status-completed { background: hsl(210,80%,92%); color: hsl(210,80%,30%); }
+.status-expired   { background: hsl(0,0%,92%);    color: hsl(0,0%,40%); }
+
+/* Active / completed / expired prescription card borders */
+.active-rx    { border-left: 4px solid var(--success) !important; }
+.completed-rx { border-left: 4px solid var(--info) !important; }
+.expired-rx   { border-left: 4px solid var(--text-muted) !important; opacity: 0.8; }
